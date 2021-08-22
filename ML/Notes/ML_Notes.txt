@@ -1,0 +1,49 @@
+ML session-2
+	Recap of ML
+
+		Types pf learning:
+			Supervised -> make predictions
+				regression -> predict cont. numeric values like temp, salary, age, weight, loan amount etc.
+						Linear regression
+						Tree based
+							Decision trees
+							Random forest
+						SVM
+				classification -> predict categorical values which can be either binary or multi-class
+					Tree based
+							Decision trees
+							Random forest
+					Logistic regression
+					SVM
+				SL - Train the model using both the features + target(column to be predicted)
+			USL - no predictions here hence no target. get some insights about data
+					clusters
+						k-means
+						hierarchical
+					recommendation(not in scope)
+						content based filtering
+						colloborative filtering
+			Linear regression:
+					simple linear -> one feature
+					multi-variate or multiple linear regression - multiple feature
+				Assumption : linear relationship exists between features and target
+				tries to fit a best fit line for all the data points
+				best fit line is a line with minimal deveation
+				deveation is represented as MSE or RMSE
+				only the best fit line with result in the least possible RMSE
+				Preformance of a regression R2 score -> measures the varience exhibited by the model with refrence to the varience in the underlying data
+		library used for ML in sklearn:
+			EDA
+				understanding data
+				data cleaning
+				obtaining visuals
+				dropping out certain features
+				....
+			pre-process the data(optional)
+				scaling of data
+				encoding string categorical columns
+			Seperate out the features and the target
+			split the data into train and test
+			train the model (use both the features and the target of the training set)
+			Make predictions(use only the features of the test set)
+			evaluate the preformance(compare the predicted results with the actual test values of the target column)
